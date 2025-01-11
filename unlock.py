@@ -22,7 +22,7 @@ def bruteforceBootloader(increment):
     autoreboot      = False             #set this to True if you need to prevent the automatic reboot to system by the bootloader after x failed attempts, code will automatically set this to true if it detects a reboot by the bootloader
     autorebootcount = 4                 #reboot every x attemps if autoreboot is True, set this one below the automatic reboot by the bootloader
     savecount       = 200               #save progress every 200 attempts, do not set too low to prevent storage wearout
-    unknownfail     = True              #fail if output is unknown, only switch to False if you have problems with this
+    unknownfail     = False              #fail if output is unknown, only switch to False if you have problems with this
     
     failmsg = "check password failed"   #used to check if code is wrong
     
